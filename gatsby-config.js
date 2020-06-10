@@ -11,7 +11,7 @@ module.exports = {
     author: `John Doe`,
     description: `John Doe's personal site`,
     keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
-    url: process.env.URL || process.env.DEPLOY_URL || ``,
+    siteUrl: process.env.URL || process.env.DEPLOY_URL || ``,
   },
   plugins: [
     {
