@@ -1,0 +1,57 @@
+@import "colors";
+
+/*
+ * Theme definitions
+ */
+
+$themes: (
+  light: (
+    backgroundColor: white,
+    textColor: $black,
+    themeColor: $dark-blue,
+    titleColor: $dark-blue,
+    titleHoverColor: $faded-red,
+    hrefColor: $dark-blue,
+    textHoverColor: $gray-700,
+  ),
+  dark: (
+    backgroundColor: #222,
+    textColor: $gray-300,
+    titleColor: $white,
+    titleHoverColor: $faded-red,
+    hrefColor: $faded-red,
+    themeColor: $dark-red,
+  ),
+);
+
+/*
+ * Implementation of themes
+ */
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+a {
+  @include themify($themes) {
+    color: themed("hrefColor");
+  }
+}

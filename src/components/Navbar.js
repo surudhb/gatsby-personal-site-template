@@ -7,18 +7,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default () => (
   <ThemeContext.Consumer>
-    {theme => (
+    {({ dark, toString, toggleDark }) => (
       <Navbar
         fixed="top"
         collapseOnSelect
         expand="lg"
-        bg={theme.dark ? "vader-dark" : "light"}
-        variant={theme.dark ? "dark" : "light"}
+        bg={dark ? "vader-dark" : "light"}
+        variant={toString()}
       >
         <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
           <FontAwesomeIcon
-            icon={["fab", `${theme.dark ? "empire" : "rebel"}`]}
-            className={`brand-icon ${theme.dark ? "empire" : "rebel"}`}
+            icon={["fab", `${dark ? "empire" : "rebel"}`]}
+            className={`brand-icon ${dark ? "empire" : "rebel"}`}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -46,8 +46,8 @@ export default () => (
                 type="switch"
                 id="custom-switch"
                 label=""
-                checked={theme.dark}
-                onChange={theme.toggleDark}
+                checked={dark}
+                onChange={toggleDark}
               />
             </Form>
           </Nav>

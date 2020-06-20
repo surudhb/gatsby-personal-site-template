@@ -14,6 +14,7 @@ const r2d2Audio = new Howl({
 
 const defaultState = {
   dark: false,
+  toString: () => ``,
   toggleDark: () => {},
 }
 
@@ -28,6 +29,8 @@ class ThemeProvider extends React.Component {
   state = {
     dark: false,
   }
+
+  toString = () => (this.state.dark ? `dark` : `light`)
 
   toggleDark = () => {
     let dark = !this.state.dark
@@ -56,6 +59,7 @@ class ThemeProvider extends React.Component {
         value={{
           dark,
           toggleDark: this.toggleDark,
+          toString: this.toString,
         }}
       >
         {children}
