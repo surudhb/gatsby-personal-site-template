@@ -19,14 +19,73 @@ body {
 }
 
 .bg-none {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0) !important;
 }
 
 .aurebesh:hover {
   font-family: "Aurabesh", "Raleway", sans-serif;
 }
 
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+/** Toggle Switch Styling START */
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border: none;
+  box-shadow: none;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+
+.custom-control-input ~ .custom-control-label {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+// light mode
+.custom-control-input ~ .custom-control-label::before {
+  border-color: $yellow;
+  background-color: $yellow;
+}
+
+.custom-switch .custom-control-input ~ .custom-control-label::after {
+  background-color: $white;
+}
+
+// dark mode
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: $black;
+  background-color: $black;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: $red;
+}
+/** Toggle Switch Styling END */
+
+/** Home Page Icon Styling START */
+.icons-container a {
+  margin: 0 1rem;
+}
+
+.icons {
+  font-size: 3.75rem;
+  margin: auto;
+  color: $gray-600;
+  border-radius: 50%;
+}
+
+.brand-icon {
+  font-size: 2.75rem;
+  color: $gray-700;
+  &:hover {
+    color: $faded-red;
+  }
+  &.empire {
+    color: $gray-500;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+/** Home Page Icon Styling END */

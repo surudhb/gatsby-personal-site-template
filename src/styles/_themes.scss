@@ -1,3 +1,7 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "colors";
 
 /*
@@ -7,20 +11,38 @@
 $themes: (
   light: (
     backgroundColor: white,
+    footerBackground: white,
+    navBackground: $gray-100,
     textColor: $black,
+    linkHover: $gray-800,
     themeColor: $dark-blue,
     titleColor: $dark-blue,
-    titleHoverColor: $faded-red,
     hrefColor: $dark-blue,
     textHoverColor: $gray-700,
+    github: $black,
+    linkedin: $linkedin-blue,
+    fcc: $fcc-green,
+    hr: $hr-green,
+    mail: $yellow,
+    file: $dark-blue,
+    iconBackground: $white,
   ),
   dark: (
     backgroundColor: #222,
+    footerBackground: #222,
+    navBackground: $dark-gray,
+    linkHover: $gray-200,
     textColor: $gray-300,
     titleColor: $white,
-    titleHoverColor: $faded-red,
     hrefColor: $faded-red,
     themeColor: $dark-red,
+    github: $dark-red,
+    linkedin: $dark-red,
+    fcc: $dark-red,
+    hr: $dark-red,
+    mail: $dark-red,
+    file: $dark-red,
+    iconBackground: $black,
   ),
 );
 
@@ -50,8 +72,68 @@ $themes: (
   @return map-get($theme-map, $key);
 }
 
-a {
+/** CUSTOM THEMING BEGIN */
+
+// header
+nav:not(.footer),
+nav:not(.footer) * {
   @include themify($themes) {
-    color: themed("hrefColor");
+    background: themed("navBackground") !important;
+  }
+  & a:hover {
+    @include themify($themes) {
+      color: themed("linkHover") !important;
+      text-decoration: underline themed("themeColor") 0.1rem !important;
+    }
+  }
+}
+
+.icons:hover {
+  @include themify($themes) {
+    background: themed("iconBackground");
+    &.github {
+      color: themed("github");
+    }
+    &.linkedin {
+      color: themed("linkedin");
+      border-radius: unset;
+    }
+    &.fcc {
+      color: themed("fcc");
+      border-radius: unset;
+    }
+    &.hr {
+      color: themed("hr");
+      border-radius: unset;
+    }
+    &.mail {
+      color: themed("mail");
+      border-radius: unset;
+    }
+    &.file {
+      color: themed("file");
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include themify($themes) {
+    color: themed("titleColor");
+  }
+}
+
+div {
+  @include themify($themes) {
+    background: themed("backgroundColor");
+  }
+}
+
+p {
+  @include themify($themes) {
+    color: themed("textColor");
   }
 }

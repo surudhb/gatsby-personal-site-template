@@ -31,3 +31,8 @@
 - `Helmet` is used to add SEO to the site making it easier for search engines to relate search keywords to your website.
 - `Fontawesome` is used for icons
 - `Howler` is used to manage audio files
+
+### TODO
+
+- Remove ALL custom styling and replace with themed styling
+- Use useContext hook instead of `<ComponentContext.Consumer>`
