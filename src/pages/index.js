@@ -10,7 +10,7 @@ export default ({ data }) => {
   const { dark } = useContext(ThemeContext)
   return (
     <PageLayout>
-      <SEO title="John Doe" />
+      <SEO title={`${firstName} ${lastName}`} />
       <Container className="text-center pt-5 mt-5" fluid>
         <Container fluid>
           <Image

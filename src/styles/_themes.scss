@@ -88,6 +88,12 @@ nav:not(.footer) * {
   }
 }
 
+.footer {
+  @include themify($themes) {
+    background: themed("backgroundColor");
+  }
+}
+
 .icons:hover {
   @include themify($themes) {
     background: themed("iconBackground");

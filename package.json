@@ -1,7 +1,7 @@
 {
   "name": "john-doe-starter-site",
   "private": true,
-  "description": "A personal site built on bare-bones starter for Gatsby",
+  "description": "A personal site built on the bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
