@@ -26,6 +26,7 @@ $themes: (
     mail: $yellow,
     file: $dark-blue,
     iconBackground: $white,
+    cardBackground: $white,
   ),
   dark: (
     backgroundColor: #222,
@@ -43,6 +44,7 @@ $themes: (
     mail: $dark-red,
     file: $dark-red,
     iconBackground: $black,
+    cardBackground: $dark-gray,
   ),
 );
 
@@ -91,6 +93,12 @@ nav:not(.footer) * {
 .footer {
   @include themify($themes) {
     background: themed("backgroundColor");
+  }
+}
+
+.card-container * {
+  @include themify($themes) {
+    background: themed("cardBackground");
   }
 }
 

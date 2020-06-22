@@ -46,7 +46,7 @@ export default ({ data }) => {
             <p className="text-center">
               {designations.map((attr, i) => (
                 <>
-                  &nbsp;<b>{attr}</b>&nbsp;
+                  &nbsp;<b key={attr}>{attr}</b>&nbsp;
                   {i < designations.length - 1 && <>||</>}
                 </>
               ))}

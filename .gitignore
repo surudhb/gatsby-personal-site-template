@@ -67,3 +67,11 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+## CUSTOM IGNORE ##
+
+# content folder
+src/content
+
+# static folder
+static/
