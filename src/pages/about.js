@@ -51,7 +51,7 @@ export default ({ data }) => {
                 </>
               ))}
             </p>
-            <p style={{ textIndent: "5em" }} className="mt-5">
+            <p style={{ textIndent: "5em" }} className="mt-4 pt-2">
               Hello there! My name is <b>{`${author}`}</b>. I am a{" "}
               <a
                 href="https://www.dictionary.com/e/fictional-characters/padawan/"

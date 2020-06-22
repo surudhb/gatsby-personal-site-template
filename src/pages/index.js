@@ -47,7 +47,7 @@ export default ({ data }) => {
         <hr className="my-3" style={{ width: "40%" }} />
         <div className="d-inline-flex icons-container">
           <a
-            href="https://www.github.com/surudhb"
+            href="https://www.github.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,7 +57,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://linkedin.com/in/surudh-bhutani"
+            href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -67,7 +67,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://www.freecodecamp.org/surudhb"
+            href="https://www.freecodecamp.org"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -77,7 +77,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://www.hackerrank.com/surudhbhutani"
+            href="https://www.hackerrank.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -87,7 +87,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="mailto:surudhb@gmail.com"
+            href="mailto:johndoe@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >

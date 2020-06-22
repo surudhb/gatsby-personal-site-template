@@ -102,6 +102,24 @@ nav:not(.footer) * {
   }
 }
 
+.blog-filter {
+  @include themify($themes) {
+    & input {
+      color: themed("titleColor");
+      &:focus {
+        box-shadow: 0 0 0 1px rgba(themed("hrefColor"), 0.5) !important;
+        border-color: rgba(themed("hrefColor"), 0.5) !important;
+      }
+    }
+  }
+}
+
+.resume-tags {
+  @include themify($themes) {
+    background: themed("navBackground");
+  }
+}
+
 .icons:hover {
   @include themify($themes) {
     background: themed("iconBackground");

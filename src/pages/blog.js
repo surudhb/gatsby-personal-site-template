@@ -21,13 +21,14 @@ export default ({ data }) => {
 
     const filteredData = allPosts.filter(post => {
       // query will run on the following fields
-      const { description, title, tags } = post.node.frontmatter
+      const { description, title, tags, author } = post.node.frontmatter
       // standardize query
       const stdQuery = query.toLowerCase()
       return (
         post.node.excerpt.toLowerCase().includes(stdQuery) ||
         (description && description.toLowerCase().includes(stdQuery)) ||
         title.toLowerCase().includes(stdQuery) ||
+        author.toLowerCase().includes(stdQuery) ||
         (tags && tags.join("").toLowerCase().includes(stdQuery))
       )
     })
@@ -46,7 +47,7 @@ export default ({ data }) => {
       <SEO title="Blog" />
       <PageTitle title="My Blog" />
       <Container className="px-5 mb-5 text-center">
-        <Form className="aurebesh">
+        <Form className="aurebesh blog-filter">
           <FormControl
             className={`bg-none search ${toString()}`}
             type="text"
@@ -90,6 +91,7 @@ export const query = graphql`
             title
             description
             tags
+            author
             date(formatString: "DD MMMM, YYYY")
           }
           fields {
