@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { PageLayout, PageTitle, WorkHistory } from "../components"
 import { SEO, Utils } from "../utils"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -29,7 +30,7 @@ export default ({ data }) => {
               image={imageMap[node.fields.slug]}
               html={node.html}
             />
-            <hr className="w-50" />
+            <hr className="w-75" />
           </div>
         ))}
       </Container>

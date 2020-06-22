@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react"
+import { graphql } from "gatsby"
 import { PageLayout, PageTitle, BlogLink } from "../components"
 import { SEO, ThemeContext, Utils } from "../utils"
 import { Container, Form, FormControl } from "react-bootstrap"

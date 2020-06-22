@@ -6,11 +6,8 @@ import { Container, Badge, Col, Row } from "react-bootstrap"
 export default props => {
   const { excerpt, featuredImages, tags, title, to } = props
   return (
-    <Container
-      style={{ overflow: "auto" }}
-      className="project-link text-center"
-    >
-      <Link className="project-link" to={to} style={{ textDecoration: "none" }}>
+    <Container className="text-center">
+      <Link to={to} style={{ textDecoration: "none" }}>
         <Row>
           {featuredImages &&
             featuredImages.map(image => (

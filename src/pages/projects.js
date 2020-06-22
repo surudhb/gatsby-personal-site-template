@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { PageLayout, PageTitle, ProjectLink } from "../components"
 import { SEO, Utils } from "../utils"
 import Container from "react-bootstrap/Container"

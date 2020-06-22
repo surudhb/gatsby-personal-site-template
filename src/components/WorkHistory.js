@@ -38,7 +38,7 @@ export default props => {
           <CompanyCard frontmatter={props.frontmatter} image={props.image} />
         </Col>
         <Col className="col-8">
-          <div
+          <p
             className="text-justify mt-5"
             dangerouslySetInnerHTML={{ __html: props.html }}
           />
