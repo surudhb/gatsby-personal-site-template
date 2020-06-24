@@ -71,7 +71,9 @@ yarn-error.log
 ## CUSTOM IGNORE ##
 
 # content folder
-src/content
+src/content/
 
 # static folder
 static/
+
+

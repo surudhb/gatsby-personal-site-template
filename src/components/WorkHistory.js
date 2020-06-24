@@ -2,12 +2,12 @@ import React from "react"
 import Img from "gatsby-image"
 import { Container, Row, Col, Badge } from "react-bootstrap"
 
-const CompanyCard = props => {
-  const { company, position, startDate, endDate, location } = props.frontmatter
+const CompanyCard = ({ frontmatter, image }) => {
+  const { company, position, startDate, endDate, location } = frontmatter
   return (
     <Container className="m-auto">
       <Img
-        fluid={props.image}
+        fluid={image}
         style={{
           maxHeight: "15rem",
           maxWidth: "15rem",
@@ -28,17 +28,17 @@ const CompanyCard = props => {
   )
 }
 
-export default props => {
+export default ({ html, frontmatter, image }) => {
   return (
     <Container className="p-1 project-link text-center">
       <Row>
         <Col className="col-4">
-          <CompanyCard frontmatter={props.frontmatter} image={props.image} />
+          <CompanyCard frontmatter={frontmatter} image={image} />
         </Col>
         <Col className="col-8">
           <p
             className="text-justify mt-5"
-            dangerouslySetInnerHTML={{ __html: props.html }}
+            dangerouslySetInnerHTML={{ __html: html }}
           />
         </Col>
       </Row>
@@ -46,7 +46,7 @@ export default props => {
         <Col className="col-4"></Col>
         <Col className="col-8">
           <div className="margin-bottom">
-            {props.frontmatter.tags.map(tag => (
+            {frontmatter.tags.map(tag => (
               <Badge key={tag} pill className="mr-2 p-0 px-3 resume-tags">
                 <h4>
                   <small>{tag}</small>

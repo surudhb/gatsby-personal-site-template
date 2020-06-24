@@ -19,8 +19,8 @@ body {
 }
 
 .app-container * {
-  transition: color 0.6s ease-in-out;
-  transition: background 0.6s ease-in-out;
+  transition: color 0.45s ease-in-out;
+  transition: background 0.45s ease-in-out;
 }
 
 .bg-none {
@@ -93,3 +93,7 @@ body {
   }
 }
 /** Home Page Icon Styling END */
+
+.unemployed {
+  font-size: 1.35rem;
+}

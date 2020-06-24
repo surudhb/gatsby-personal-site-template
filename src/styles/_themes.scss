@@ -13,6 +13,7 @@ $themes: (
     backgroundColor: white,
     footerBackground: white,
     navBackground: $gray-100,
+    secondary: $gray-900,
     textColor: $black,
     linkHover: $gray-800,
     themeColor: $dark-blue,
@@ -32,6 +33,7 @@ $themes: (
   dark: (
     backgroundColor: #222,
     footerBackground: #222,
+    secondary: $gray-100,
     navBackground: $dark-gray,
     linkHover: $gray-200,
     textColor: $gray-300,
@@ -104,9 +106,20 @@ nav:not(.footer) * {
   }
 }
 
-.card-container * {
+.watch-list-title {
   @include themify($themes) {
-    background: themed("cardBackground");
+    color: themed("secondary");
+  }
+}
+
+.card-container {
+  @include themify($themes) {
+    width: 20rem;
+    height: 22rem;
+    text-decoration-color: themed("hrefColor");
+    & * {
+      background: themed("cardBackground");
+    }
   }
 }
 

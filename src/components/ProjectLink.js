@@ -3,8 +3,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { Container, Badge, Col, Row } from "react-bootstrap"
 
-export default props => {
-  const { excerpt, featuredImages, tags, title, to } = props
+export default ({ excerpt, featuredImages, tags, title, to }) => {
   return (
     <Container className="text-center">
       <Link to={to} style={{ textDecoration: "none" }}>
@@ -12,11 +11,7 @@ export default props => {
           {featuredImages &&
             featuredImages.map(image => (
               <Col key={image.src}>
-                <Img
-                  fluid={image}
-                  style={{ maxWidth: "13rem" }}
-                  className="m-auto"
-                />
+                <Img fluid={image} className="m-auto w-75" />
               </Col>
             ))}
         </Row>

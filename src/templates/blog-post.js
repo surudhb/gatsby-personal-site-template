@@ -3,12 +3,9 @@ import { graphql } from "gatsby"
 import PostTemplate from "./post-template"
 
 const SubTitle = ({ ttr, date, author }) => (
-  <div className="mb-5">
-    <h5 className="text-muted">
-      Time to read: {ttr}
-      <small>min</small> | {date} | {author}
-    </h5>
-  </div>
+  <h5 className="text-muted mb-5">
+    Time to read: {ttr} <small>min</small> | {date} | {author}
+  </h5>
 )
 
 export default ({ data }) => {

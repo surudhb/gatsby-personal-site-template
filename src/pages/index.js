@@ -13,21 +13,19 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title="Home" />
       <Container className="text-center pt-5 mt-5" fluid>
-        <Container fluid>
-          <Image
-            rounded
-            fluid
-            width="150"
-            height="150"
-            src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
-            alt={dark ? "Darth Vader" : "R2-D2"}
-          />
-          {unemployed && (
-            <p className="mt-2">
-              <b> Hey! I am looking for new opportunities :)</b>
-            </p>
-          )}
-        </Container>
+        <Image
+          rounded
+          fluid
+          width="150"
+          height="150"
+          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
+          alt={dark ? "Darth Vader" : "R2-D2"}
+        />
+        {unemployed && (
+          <p className="mt-2">
+            <b> Hey! I am looking for new opportunities :)</b>
+          </p>
+        )}
         <Container className="py-my-0">
           <h1
             style={{
@@ -35,16 +33,17 @@ export default ({ data }) => {
               color: "black",
             }}
           >
-            <span style={{ color: "#ced4da" }}>{firstName}</span> {lastName}
+            <span style={{ color: "#ced4da" }}>{firstName}</span>&nbsp;
+            {lastName}
           </h1>
           <p>
             <i>
-              {occupation} by day,{" "}
+              {occupation} by day,&nbsp;
               {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
             </i>
           </p>
         </Container>
-        <hr className="my-3" style={{ width: "40%" }} />
+        <hr className="my-3 w-25" />
         <div className="d-inline-flex icons-container">
           <a
             href="https://www.github.com"
