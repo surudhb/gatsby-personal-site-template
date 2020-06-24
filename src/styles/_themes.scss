@@ -16,6 +16,7 @@ $themes: (
     textColor: $black,
     linkHover: $gray-800,
     themeColor: $dark-blue,
+    heartColor: pink,
     titleColor: $dark-blue,
     hrefColor: $dark-blue,
     textHoverColor: $gray-700,
@@ -37,6 +38,7 @@ $themes: (
     titleColor: $white,
     hrefColor: $faded-red,
     themeColor: $dark-red,
+    heartColor: red,
     github: $dark-red,
     linkedin: $dark-red,
     fcc: $dark-red,
@@ -93,6 +95,12 @@ nav:not(.footer) * {
 .footer {
   @include themify($themes) {
     background: themed("backgroundColor");
+  }
+}
+
+.heart {
+  @include themify($themes) {
+    color: themed("heartColor");
   }
 }
 

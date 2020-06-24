@@ -1,12 +1,10 @@
-import React, { useContext, useState } from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { PageLayout, PageTitle, BlogLink } from "../components"
-import { SEO, ThemeContext, Utils } from "../utils"
+import { SEO, Utils } from "../utils"
 import { Container, Form, FormControl } from "react-bootstrap"
 
 export default ({ data }) => {
-  const { toString } = useContext(ThemeContext)
-
   const [state, setState] = useState({
     filteredData: [],
     query: "",
@@ -50,7 +48,7 @@ export default ({ data }) => {
       <Container className="px-5 mb-5 text-center">
         <Form className="aurebesh blog-filter">
           <FormControl
-            className={`bg-none search ${toString()}`}
+            className="bg-none search"
             type="text"
             placeholder="Search"
             onChange={handleChange}
@@ -62,9 +60,8 @@ export default ({ data }) => {
         className="text-left d-flex flex-wrap justify-content-start"
       >
         {filteredPosts.map(({ node }) => (
-          <div className="p-2 m-1">
+          <div key={node.id} className="p-2 m-1">
             <BlogLink
-              key={node.id}
               to={node.fields.slug}
               featuredImage={featuredImageMap[node.fields.slug]}
               title={node.frontmatter.title}

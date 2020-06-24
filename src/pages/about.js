@@ -45,10 +45,10 @@ export default ({ data }) => {
           >
             <p className="text-center">
               {designations.map((attr, i) => (
-                <>
-                  &nbsp;<b key={attr}>{attr}</b>&nbsp;
+                <span key={attr}>
+                  &nbsp;<b>{attr}</b>&nbsp;
                   {i < designations.length - 1 && <>||</>}
-                </>
+                </span>
               ))}
             </p>
             <p style={{ textIndent: "5em" }} className="mt-4 pt-2">

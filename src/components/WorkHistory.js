@@ -1,6 +1,5 @@
-import React, { useContext } from "react"
+import React from "react"
 import Img from "gatsby-image"
-import ThemeContext from "../utils/theme-context"
 import { Container, Row, Col, Badge } from "react-bootstrap"
 
 const CompanyCard = props => {
@@ -30,7 +29,6 @@ const CompanyCard = props => {
 }
 
 export default props => {
-  const { toString } = useContext(ThemeContext)
   return (
     <Container className="p-1 project-link text-center">
       <Row>
@@ -49,12 +47,7 @@ export default props => {
         <Col className="col-8">
           <div className="margin-bottom">
             {props.frontmatter.tags.map(tag => (
-              <Badge
-                key={tag}
-                pill
-                variant={toString()}
-                className={`mr-2 py-0 px-3 resume-tags`}
-              >
+              <Badge key={tag} pill className="mr-2 p-0 px-3 resume-tags">
                 <h4>
                   <small>{tag}</small>
                 </h4>

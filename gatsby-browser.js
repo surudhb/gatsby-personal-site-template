@@ -1,5 +1,5 @@
 import React from "react"
-import ThemeContext, { ThemeProvider } from "./src/utils/theme-context"
+import ThemeContext, { ThemeProvider } from "./src/utils/theme"
 import "./src/styles/global.scss"
 
 /** This component wraps around the entire root div where we render our content.

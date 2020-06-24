@@ -21,7 +21,7 @@ module.exports = {
       `Coding Monkey`,
       `Jedi Master`,
       `Binary Sunset Enthusiast`,
-      `Mositure Farmer`,
+      `Moisture Farmer`,
     ],
     readingList: [
       {

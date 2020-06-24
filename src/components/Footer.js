@@ -6,8 +6,8 @@ export default () => {
   return (
     <div className="footer text-muted text-center">
       <span className="m-auto">
-        {author} &copy; {new Date().getFullYear()}. Made with{" "}
-        <span style={{ color: "red" }}>&nbsp;❤&nbsp;</span> &&nbsp;
+        <b>{author}</b> &copy; {new Date().getFullYear()}. Made with{" "}
+        <span className="heart">&nbsp;❤&nbsp;</span> &&nbsp;
         <a href="https://www.gatsbyjs.org/">Gatsby</a>
       </span>
     </div>

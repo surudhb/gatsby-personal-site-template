@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import ThemeContext from "../utils/theme-context"
+import ThemeContext from "../utils/theme"
 import { Navbar, Nav, Form } from "react-bootstrap"
 import { Link } from "gatsby"
 import "./Fontawesome.js"

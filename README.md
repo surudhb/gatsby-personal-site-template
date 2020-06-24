@@ -132,7 +132,8 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - `Fontawesome` is used for icons
 - `Howler` is used to manage audio files
 
-### TODO
+### Credits
 
-- Remove ALL custom styling and replace with themed styling
-- Use useContext hook instead of `<ComponentContext.Consumer>`
+- Star Wars icons: https://icons8.com/icons/
+- Using Context API with Gatsby https://www.gatsbyjs.org/blog/2019-01-31-using-react-context-api-with-gatsby/
+- SEO with Gatsby https://gregberge.com/blog/gatsby-seo

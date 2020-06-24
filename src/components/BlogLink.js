@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Card from "react-bootstrap/Card"
-import ThemeContext from "../utils/theme-context"
+import ThemeContext from "../utils/theme"
 
 export default props => {
   const { dark } = useContext(ThemeContext)

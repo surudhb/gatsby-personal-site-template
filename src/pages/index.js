@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import { graphql } from "gatsby"
-import ThemeContext from "../utils/theme-context"
+import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
 import { Container, Image } from "react-bootstrap"
