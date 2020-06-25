@@ -5,7 +5,7 @@ import Footer from "./Footer"
 
 export default ({ children }) => {
   return (
-    <Container fluid className="px-0 app-container">
+    <Container fluid className="px-0 app-container min-vh-100">
       <Header />
       <Container fluid className="pt-5 mt-5 text-center">
         {children}

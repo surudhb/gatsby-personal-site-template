@@ -11,7 +11,6 @@ const CompanyCard = ({ frontmatter, image }) => {
         style={{
           maxHeight: "15rem",
           maxWidth: "15rem",
-          borderRadius: "50%",
         }}
         className="m-auto"
       />
