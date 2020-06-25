@@ -86,11 +86,12 @@ nav:not(.footer) * {
   @include themify($themes) {
     background: themed("navBackground") !important;
   }
-  & a:hover {
-    @include themify($themes) {
-      color: themed("linkHover") !important;
-      text-decoration: underline themed("themeColor") 0.1rem !important;
-    }
+}
+
+.nav-links *:hover {
+  @include themify($themes) {
+    color: themed("linkHover") !important;
+    text-decoration: underline themed("themeColor") solid !important;
   }
 }
 
