@@ -1,41 +1,7 @@
 @font-face {
-  font-family: "Aurabesh";
+  font-family: "Aurebesh";
   font-weight: 400;
   font-style: normal;
   src: url("./Aurebesh/Aurebesh.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Aurabesh";
-  font-weight: 400;
-  font-style: italic;
-  src: url("./Aurebesh/Aurebesh-Italic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Aurabesh";
-  font-weight: 800;
-  font-style: normal;
-  src: url("./Aurebesh/Aurebesh-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Aurabesh";
-  font-weight: 400;
-  font-style: oblique;
-  src: url("./Aurebesh/Aurebesh-Condensed.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Aurabesh";
-  font-weight: 800;
-  font-style: oblique;
-  src: url("./Aurebesh/Aurebesh-Condensed-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Aurabesh";
-  font-weight: 400;
-  font-style: oblique;
-  src: url("./Aurebesh/Aurebesh-Condensed-Italic.woff") format("woff");
+  font-display: swap;
 }

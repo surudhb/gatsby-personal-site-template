@@ -56,11 +56,11 @@ export default ({ data }) => {
         </Form>
       </Container>
       <Container
-        fluid="xl"
-        className="text-left d-flex flex-wrap justify-content-start"
+        fluid
+        className="p-5 w-75 text-left d-flex flex-wrap justify-content-center"
       >
         {filteredPosts.map(({ node }) => (
-          <div key={node.id} className="p-2 m-1">
+          <div key={node.id} className="p-3">
             <BlogLink
               to={node.fields.slug}
               featuredImage={featuredImageMap[node.fields.slug]}

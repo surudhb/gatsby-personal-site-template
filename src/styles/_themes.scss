@@ -1,6 +1,3 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "colors";
 
@@ -84,14 +81,14 @@ $themes: (
 nav:not(.footer),
 nav:not(.footer) * {
   @include themify($themes) {
-    background: themed("navBackground") !important;
+    background: themed("navBackground");
   }
 }
 
 .nav-links *:hover {
   @include themify($themes) {
-    color: themed("linkHover") !important;
-    text-decoration: underline themed("themeColor") solid !important;
+    color: themed("linkHover");
+    text-decoration: underline themed("themeColor") solid;
   }
 }
 
@@ -115,8 +112,8 @@ nav:not(.footer) * {
 
 .card-container {
   @include themify($themes) {
-    width: 20rem;
-    height: 22rem;
+    width: 25rem;
+    height: 23rem;
     text-decoration-color: themed("hrefColor");
     & * {
       background: themed("cardBackground");
@@ -129,8 +126,8 @@ nav:not(.footer) * {
     & input {
       color: themed("titleColor");
       &:focus {
-        box-shadow: 0 0 0 1px rgba(themed("hrefColor"), 0.5) !important;
-        border-color: rgba(themed("hrefColor"), 0.5) !important;
+        box-shadow: 0 0 0 1px rgba(themed("hrefColor"), 0.5);
+        border-color: rgba(themed("hrefColor"), 0.5);
       }
     }
   }

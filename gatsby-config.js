@@ -59,6 +59,8 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-preload-link-crossorigin`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -78,12 +80,27 @@ module.exports = {
         description: `This is my personal site.`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#ggg`,
+        theme_color: `#fff`,
         display: `standalone`,
         icon: `${__dirname}/static/favicon.ico`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Raleway"],
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `tomato`,
+        showSpinner: true,
+      },
+    },
   ],
 }

@@ -53,6 +53,7 @@ export default ({ data }) => {
             <FontAwesomeIcon
               icon={["fab", "github"]}
               className="icons github"
+              alt="Github"
             />
           </a>
           <a
@@ -63,6 +64,7 @@ export default ({ data }) => {
             <FontAwesomeIcon
               icon={["fab", "linkedin"]}
               className="icons linkedin"
+              alt="LinkedIn"
             />
           </a>
           <a
@@ -73,6 +75,7 @@ export default ({ data }) => {
             <FontAwesomeIcon
               icon={["fab", "free-code-camp"]}
               className="icons fcc"
+              alt="FreeCodeCamp"
             />
           </a>
           <a
@@ -83,6 +86,7 @@ export default ({ data }) => {
             <FontAwesomeIcon
               icon={["fab", "hackerrank"]}
               className="icons hr"
+              alt="Hackerrank"
             />
           </a>
           <a
@@ -93,12 +97,14 @@ export default ({ data }) => {
             <FontAwesomeIcon
               icon={["fas", "envelope"]}
               className="icons mail"
+              alt="Mail"
             />
           </a>
           <a href="../../resume.pdf" target="_blank" download>
             <FontAwesomeIcon
               icon={["fas", "file-alt"]}
               className="icons file"
+              alt="Resume"
             />
           </a>
         </div>
