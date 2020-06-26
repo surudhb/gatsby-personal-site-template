@@ -29,6 +29,11 @@ body {
 
 .aurebesh:hover {
   font-family: "Aurebesh", sans-serif;
+  font-display: swap;
+}
+
+.i-5 {
+  text-indent: 5em;
 }
 
 /** Toggle Switch Styling START */
@@ -86,9 +91,12 @@ body {
     color: $faded-red;
   }
   &.empire {
-    color: $gray-500;
+    border-radius: 50%;
+    color: $white;
+    background: $black;
     &:hover {
-      color: $white;
+      color: $black;
+      background: $white;
     }
   }
 }

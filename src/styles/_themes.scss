@@ -1,4 +1,4 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "colors";
 
 /*
@@ -38,12 +38,12 @@ $themes: (
     hrefColor: $faded-red,
     themeColor: $dark-red,
     heartColor: red,
-    github: $dark-red,
-    linkedin: $dark-red,
-    fcc: $dark-red,
-    hr: $dark-red,
-    mail: $dark-red,
-    file: $dark-red,
+    github: $empire-red,
+    linkedin: $empire-red,
+    fcc: $empire-red,
+    hr: $empire-red,
+    mail: $empire-red,
+    file: $empire-red,
     iconBackground: $black,
     cardBackground: $dark-gray,
   ),
@@ -85,10 +85,12 @@ nav:not(.footer) * {
   }
 }
 
-.nav-links *:hover {
+.nav-links a {
   @include themify($themes) {
-    color: themed("linkHover");
-    text-decoration: underline themed("themeColor") solid;
+    color: themed("linkHover") !important;
+    &:hover {
+      text-decoration: underline themed("hrefColor") solid;
+    }
   }
 }
 

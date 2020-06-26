@@ -45,7 +45,7 @@ export default ({ data }) => {
               </span>
             ))}
           </p>
-          <p style={{ textIndent: "5em" }} className="mt-4 pt-2">
+          <p className="i-5 mt-4 pt-2">
             Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
             <a
               href="https://www.dictionary.com/e/fictional-characters/padawan/"
@@ -61,13 +61,13 @@ export default ({ data }) => {
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <p style={{ textIndent: "5em" }}>
+          <p className="i-5">
             In my spare time, Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-          <p style={{ textIndent: "5em" }}>
+          <p className="i-5">
             Check out my <Link to="/projects">projects</Link> to see what I've
             been up to! Or check out my <Link to="/blog">blog</Link> to see
             what's recently caught my eye!

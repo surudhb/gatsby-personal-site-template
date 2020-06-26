@@ -6,13 +6,14 @@ import "./Fontawesome.js"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default () => {
-  const { dark, toString, toggleDark } = useContext(ThemeContext)
+  const { dark, toggleDark } = useContext(ThemeContext)
   return (
-    <Navbar fixed="top" collapseOnSelect variant={toString()}>
+    <Navbar fixed="top" collapseOnSelect>
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <FontAwesomeIcon
           icon={["fab", `${dark ? "empire" : "rebel"}`]}
           className={`brand-icon ${dark ? "empire" : "rebel"}`}
+          title="Home"
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,16 +22,16 @@ export default () => {
         className="justify-content-end"
       >
         <Nav className="pr-3 mr-4 nav-links">
-          <Nav.Link className="ml-2" as={Link} to="/blog">
+          <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
             Blog
           </Nav.Link>
-          <Nav.Link className="ml-2" as={Link} to="/about">
+          <Nav.Link className="ml-2" as={Link} to="/about" title="About">
             About
           </Nav.Link>
-          <Nav.Link className="ml-2" as={Link} to="/projects">
+          <Nav.Link className="ml-2" as={Link} to="/projects" title="Projects">
             Projects
           </Nav.Link>
-          <Nav.Link className="ml-2" as={Link} to="/resume">
+          <Nav.Link className="ml-2" as={Link} to="/resume" title="Resume">
             Resume
           </Nav.Link>
         </Nav>
@@ -40,6 +41,7 @@ export default () => {
               type="switch"
               id="custom-switch"
               label=""
+              title="Toggle Theme"
               checked={dark}
               onChange={toggleDark}
             />
