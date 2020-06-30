@@ -33,8 +33,8 @@ export default ({ data }) => {
               color: "black",
             }}
           >
-            <span style={{ color: "#ced4da" }}>{firstName}</span>&nbsp;
-            {lastName}
+            <span className="first-name">{firstName}</span>&nbsp;
+            <span className="last-name">{lastName}</span>
           </h1>
           <p>
             <i>

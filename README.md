@@ -137,3 +137,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - Star Wars icons: https://icons8.com/icons/
 - Using Context API with Gatsby https://www.gatsbyjs.org/blog/2019-01-31-using-react-context-api-with-gatsby/
 - SEO with Gatsby https://gregberge.com/blog/gatsby-seo
+
+### TODO
+
+- Media queries to fix horrible styling on mobile devices

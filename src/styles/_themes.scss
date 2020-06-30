@@ -1,4 +1,4 @@
-@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "colors";
 
 /*
@@ -12,12 +12,13 @@ $themes: (
     navBackground: $gray-100,
     secondary: $gray-900,
     textColor: $black,
+    firstName: orange,
+    lastName: $black,
     linkHover: $gray-800,
     themeColor: $dark-blue,
     heartColor: pink,
     titleColor: $dark-blue,
     hrefColor: $dark-blue,
-    textHoverColor: $gray-700,
     github: $black,
     linkedin: $linkedin-blue,
     fcc: $fcc-green,
@@ -34,6 +35,8 @@ $themes: (
     navBackground: $dark-gray,
     linkHover: $gray-200,
     textColor: $gray-300,
+    firstName: $gray-100,
+    lastName: $empire-red,
     titleColor: $white,
     hrefColor: $faded-red,
     themeColor: $dark-red,
@@ -76,6 +79,18 @@ $themes: (
 }
 
 /** CUSTOM THEMING BEGIN */
+
+.first-name {
+  @include themify($themes) {
+    color: themed("firstName");
+  }
+}
+
+.last-name {
+  @include themify($themes) {
+    color: themed("lastName");
+  }
+}
 
 // header
 nav:not(.footer),
