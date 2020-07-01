@@ -14,10 +14,9 @@ export default ({ data }) => {
       <SEO title="Home" />
       <Container className="text-center pt-5 mt-5" fluid>
         <Image
-          rounded
-          fluid
           width="150"
           height="150"
+          fluid
           src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
           alt={dark ? "Darth Vader" : "R2-D2"}
         />
