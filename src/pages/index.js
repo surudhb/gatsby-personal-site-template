@@ -26,7 +26,7 @@ export default ({ data }) => {
             <b> Hey! I am looking for new opportunities :)</b>
           </p>
         )}
-        <Container className="py-my-0">
+        <Container className="py-0 my-0">
           <h1
             style={{
               fontSize: "5rem",
