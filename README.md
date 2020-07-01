@@ -2,8 +2,8 @@ See me [live!](https://gatsby-starter-portfolio.herokuapp.com/)
 
 ## Usage
 
-`npm i -g gatsby-cli`
-`gatsby new your-site-name https://github.com/surudhb/gatsby-personal-site-template.git`
+`npm i -g gatsby-cli`\
+`gatsby new your-site-name https://github.com/surudhb/gatsby-personal-site-template.git`\
 `cd your-site-name && gatsby develop`
 
 ## 📋 Starter README
