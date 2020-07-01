@@ -57,7 +57,7 @@ export default ({ data }) => {
       </Container>
       <Container
         fluid
-        className="p-5 w-75 text-left d-flex flex-wrap justify-content-center"
+        className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
       >
         {filteredPosts.map(({ node }) => (
           <div key={node.id} className="p-3">

@@ -5,12 +5,12 @@ import { Container, Row, Col, Badge } from "react-bootstrap"
 const CompanyCard = ({ frontmatter, image }) => {
   const { company, position, startDate, endDate, location } = frontmatter
   return (
-    <Container className="m-auto">
+    <Container className="m-auto work-history">
       <Img
         fluid={image}
         style={{
-          maxHeight: "15rem",
-          maxWidth: "15rem",
+          maxHeight: "15vmax",
+          maxWidth: "15vmax",
         }}
         className="m-auto"
       />
@@ -31,20 +31,20 @@ export default ({ html, frontmatter, image }) => {
   return (
     <Container className="p-1 project-link text-center">
       <Row>
-        <Col className="col-4">
+        <Col className="col-md-4 col-5">
           <CompanyCard frontmatter={frontmatter} image={image} />
         </Col>
-        <Col className="col-8">
+        <Col className="col-md-8 col-7">
           <p
-            className="text-justify mt-5"
+            className="text-justify mt-2"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </Col>
       </Row>
       <Row>
         <Col className="col-4"></Col>
-        <Col className="col-8">
-          <div className="margin-bottom">
+        <Col className="col-md-8 col-7">
+          <div>
             {frontmatter.tags.map(tag => (
               <Badge key={tag} pill className="mr-2 p-0 px-3 resume-tags">
                 <h4>

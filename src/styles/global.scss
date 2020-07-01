@@ -9,8 +9,8 @@ body {
   font-display: swap;
   height: 100%;
   width: 100%;
-  font-size: calc(16px * ((80vw - 700px) / (1600 - 400)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  // font-size: calc(16px * ((80vw - 700px) / (1600 - 400)));
+  // line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
 
 * {
@@ -33,7 +33,7 @@ body {
 }
 
 .i-5 {
-  text-indent: 5em;
+  text-indent: 5vmin;
 }
 
 /** Toggle Switch Styling START */
@@ -80,7 +80,7 @@ body {
 
 .icons {
   font-size: 3.75rem;
-  margin: auto;
+  margin: 0.1rem;
   color: $gray-600;
 }
 

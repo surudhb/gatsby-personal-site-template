@@ -44,7 +44,7 @@ export default ({ data }) => {
           </p>
         </Container>
         <hr className="my-3 w-25" />
-        <div className="d-inline-flex icons-container">
+        <div className="d-md-inline-flex icons-container">
           <a
             href="https://www.github.com"
             target="_blank"

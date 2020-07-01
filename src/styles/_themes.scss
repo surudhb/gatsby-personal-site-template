@@ -93,8 +93,8 @@ $themes: (
 }
 
 // header
-nav:not(.footer),
-nav:not(.footer) * {
+.navbar,
+.navbar div {
   @include themify($themes) {
     background: themed("navBackground");
   }

@@ -6,9 +6,9 @@ import "./Fontawesome.js"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default () => {
-  const { dark, toggleDark } = useContext(ThemeContext)
+  const { dark, toggleDark, toString } = useContext(ThemeContext)
   return (
-    <Navbar fixed="top" collapseOnSelect>
+    <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <FontAwesomeIcon
           icon={["fab", `${dark ? "empire" : "rebel"}`]}
@@ -34,9 +34,7 @@ export default () => {
           <Nav.Link className="ml-2" as={Link} to="/resume" title="Resume">
             Resume
           </Nav.Link>
-        </Nav>
-        <Nav>
-          <Form>
+          <Form className="ml-3 my-auto">
             <Form.Check
               type="switch"
               id="custom-switch"
