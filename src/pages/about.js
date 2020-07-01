@@ -7,7 +7,10 @@ import { ThemeContext, SEO } from "../utils"
 export default ({ data }) => {
   const MediaLink = ({ title, author, link }) => (
     <li key={title} style={{ color: "gray" }}>
-      <a href={link}>{title}</a>&nbsp;-<i>{author}</i>
+      <a rel="noopener noreferrer" href={link}>
+        {title}
+      </a>
+      &nbsp;-<i>{author}</i>
     </li>
   )
 

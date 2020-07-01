@@ -1,16 +1,18 @@
-## 📋 STARTER README
+## 📋 Starter README
 
+- A Gatsby starter for a minimalist portfolio with `SEO` and app theming using `React Context`, `Bootstrap` and `Sass`
 - I highly recommend going through Gatsby's [tutorial](https://www.gatsbyjs.org/tutorial/) before getting started.
-
-- This is a semi-biased starter that uses the context api to push a theme across the entire app
 
 ### What does this starter offer?
 
-- The starter is based off of the official [hello-world starter provided](https://github.com/gatsbyjs/gatsby-starter-hello-world).
+- The starter is based off of the official [hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) starter provided.
 - Everything in the starter is reconfigurable.
+- This starter is really a demonstation of what Gatsby is capable of.
 - Built in support for `SEO`, light/dark mode and `bootstrap`
 - Starter comes with a locally hosted font `Aurebesh`, but feel free to remove/replace it
 - Starter uses fontawesome icons for affiliate links
+- Starter uses `gatsby-node.js` and Markdown files to programatically create pages for blog posts and projects
+- Starter uses `siteMetadata` to create `About` page
 
 ### The file structure is as follows:
 
@@ -38,6 +40,19 @@
 - Using Context API with Gatsby: https://www.gatsbyjs.org/blog/2019-01-31-using-react-context-api-with-gatsby/
 - SEO with Gatsby: https://gregberge.com/blog/gatsby-seo
 - Gatsby: https://www.gatsbyjs.org/docs/
+
+### Lighthouse screenshots
+
+![Test 1](./assets/test-1.png)
+![Test 2](./assets/test-2.png)
+
+### App Screenshots
+
+Light Mode\
+<img src="./assets/light-mode.png" alt="Light Mode" width="700">
+<br><br>
+Dark Mode\
+<img src="./assets/dark-mode.png" alt="Dark Mode" width="700">
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
