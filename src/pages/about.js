@@ -36,7 +36,7 @@ export default ({ data }) => {
           rounded
           width="140"
           height="140"
-          src={`../../icons/luke-${toString()}.png`}
+          src={`../../icons/memoji-${toString()}.png`}
           alt={author}
         />
         <article className="w-75 m-auto pt-2 text-justify">
