@@ -19,8 +19,12 @@ $themes: (
     heartColor: pink,
     titleColor: $dark-blue,
     hrefColor: $dark-blue,
-    github: $black,
+    github: $github-purple,
     linkedin: $linkedin-blue,
+    instagram: $instagram-red,
+    facebook: $facebook,
+    twitter: $twitter-blue,
+    dev: $black,
     fcc: $fcc-green,
     hr: $hr-green,
     mail: $yellow,
@@ -43,6 +47,10 @@ $themes: (
     heartColor: red,
     github: $empire-red,
     linkedin: $empire-red,
+    instagram: $empire-red,
+    facebook: $empire-red,
+    twitter: $empire-red,
+    dev: $empire-red,
     fcc: $empire-red,
     hr: $empire-red,
     mail: $empire-red,
@@ -165,8 +173,17 @@ $themes: (
     &.linkedin {
       color: themed("linkedin");
     }
-    &.fcc {
-      color: themed("fcc");
+    &.instagram {
+      color: themed("instagram");
+    }
+    &.facebook {
+      color: themed("facebook");
+    }
+    &.twitter {
+      color: themed("twitter");
+    }
+    &.dev {
+      color: themed("dev");
     }
     &.hr {
       color: themed("hr");

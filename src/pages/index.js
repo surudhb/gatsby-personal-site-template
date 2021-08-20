@@ -22,7 +22,7 @@ export default ({ data }) => {
         />
         {unemployed && (
           <p className="mt-2">
-            <b> Hey! I am looking for new opportunities :)</b>
+            <b> Hey there, my name is ...</b>
           </p>
         )}
         <Container className="py-0 my-0">
@@ -44,8 +44,68 @@ export default ({ data }) => {
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
+        <a
+            href="https://linkedin.com/in/zack-eaton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "linkedin-in"]}
+              className="icons linkedin"
+              title="LinkedIn"
+            />
+          </a>
+        
           <a
-            href="https://www.github.com"
+            href="https://instagram.com/zackaryeaton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "instagram"]}
+              className="icons instagram"
+              title="Instagram"
+            />
+          </a>
+
+        <a
+            href="https://www.facebook.com/eatonstl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "facebook"]}
+              className="icons facebook"
+              title="Facebook"
+            />
+          </a>
+
+          <a
+            href="https://www.twitter.com/zack_eaton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "twitter"]}
+              className="icons twitter"
+              title="Twitter"
+            />
+          </a>
+
+          <a
+            href="https://dev.to/zackeaton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "dev"]}
+              className="icons dev"
+              title="Dev"
+            />
+          </a>
+          
+          <a
+            href="https://www.github.com/zackeaton"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,41 +115,11 @@ export default ({ data }) => {
               title="Github"
             />
           </a>
+
+        
+
           <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "linkedin"]}
-              className="icons linkedin"
-              title="LinkedIn"
-            />
-          </a>
-          <a
-            href="https://www.freecodecamp.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "free-code-camp"]}
-              className="icons fcc"
-              title="FreeCodeCamp"
-            />
-          </a>
-          <a
-            href="https://www.hackerrank.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "hackerrank"]}
-              className="icons hr"
-              title="Hackerrank"
-            />
-          </a>
-          <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:zackeaton@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -99,6 +129,7 @@ export default ({ data }) => {
               title="e-mail"
             />
           </a>
+
           <a href="../../resume.pdf" target="_blank" download>
             <FontAwesomeIcon
               icon={["fas", "file-alt"]}
@@ -106,6 +137,7 @@ export default ({ data }) => {
               title="Resume"
             />
           </a>
+
         </div>
       </Container>
     </PageLayout>
