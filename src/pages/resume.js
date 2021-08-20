@@ -14,7 +14,7 @@ export default ({ data }) => {
       <SEO title="Resume" />
       <PageTitle title="Resume">
         &nbsp;
-        <a href="../../resume.pdf" target="_blank" download>
+        <a href="../../resume_zack_eaton.pdf" target="_blank" download>
           <FontAwesomeIcon
             style={{ fontSize: "2rem" }}
             icon={["fas", "file-download"]}

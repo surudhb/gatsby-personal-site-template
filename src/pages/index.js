@@ -130,7 +130,7 @@ export default ({ data }) => {
             />
           </a>
 
-          <a href="../../resume.pdf" target="_blank" download>
+          <a href="../../resume_zack_eaton.pdf" target="_blank" download>
             <FontAwesomeIcon
               icon={["fas", "file-alt"]}
               className="icons file"
