@@ -38,7 +38,7 @@ export default ({ data }) => {
           <p>
             <i>
               {occupation} by day,&nbsp;
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+              {dark ? `Hacker by night` : `Programmer by night`}
             </i>
           </p>
         </Container>
