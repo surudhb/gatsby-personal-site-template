@@ -17,7 +17,7 @@ export default ({ data }) => {
           width="150"
           height="150"
           fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
+          src={dark ? `../../icons/memoji-dark.png` : `../../icons/memoji-light.png`}
           alt={dark ? "Darth Vader" : "R2-D2"}
         />
         {unemployed && (
