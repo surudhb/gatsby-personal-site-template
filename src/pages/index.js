@@ -41,6 +41,15 @@ export default ({ data }) => {
               {dark ? `Hacker by night` : `Programmer by night`}
             </i>
           </p>
+          <p><FontAwesomeIcon
+          icon={["fab", `${dark ? "empie" : "rebel"}`]}
+          className={`brand-icon ${dark ? "empire" : "rebel"}`}
+          title="Home"
+        /> 
+          </p>
+          
+          <p>My website is currently under construction, so please be kind :')</p>
+          
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
