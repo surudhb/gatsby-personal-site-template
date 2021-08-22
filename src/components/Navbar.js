@@ -3,18 +3,27 @@ import ThemeContext from "../utils/theme"
 import { Navbar, Nav, Form } from "react-bootstrap"
 import { Link } from "gatsby"
 import "./Fontawesome.js"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Image } from "react-bootstrap"
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default () => {
   const { dark, toggleDark, toString } = useContext(ThemeContext)
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
-        <FontAwesomeIcon
+      <Image
+          width="75"
+          height="75"
+          fluid
+          src={dark ? `../../icons/z-logo-dark.png` : `../../icons/z-logo-light.png`}
+          alt={dark ? "The Dark Side" : "The Ashla"}
+        />
+
+        {/* <FontAwesomeIcon
           icon={["fab", `${dark ? "empire" : "rebel"}`]}
           className={`brand-icon ${dark ? "empire" : "rebel"}`}
           title="Home"
-        />
+        /> */}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse

@@ -17,8 +17,8 @@ export default ({ data }) => {
           width="150"
           height="150"
           fluid
-          src={dark ? `../../icons/memoji-dark.png` : `../../icons/memoji-light.png`}
-          alt={dark ? "Darth Vader" : "R2-D2"}
+          src={dark ? `../../icons/z-logo-dark.png` : `../../icons/z-logo-light.png`}
+          alt={dark ? "The Dark Side" : "The Ashla"}
         />
         {unemployed && (
           <p className="mt-2">
