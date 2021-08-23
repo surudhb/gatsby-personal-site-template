@@ -1,9 +1,9 @@
 import React, { useContext } from "react"
 import ThemeContext from "../utils/theme"
-import { Navbar, Nav, Form } from "react-bootstrap"
+import { Navbar, Nav, Form, Image } from "react-bootstrap"
 import { Link } from "gatsby"
 import "./Fontawesome.js"
-import { Image } from "react-bootstrap"
+//import { Image } from "react-bootstrap"
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default () => {

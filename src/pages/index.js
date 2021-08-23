@@ -28,7 +28,7 @@ export default ({ data }) => {
         <Container className="py-0 my-0">
           <h1
             style={{
-              fontSize: "5rem",
+              fontSize: "3.5rem",
               color: "black",
             }}
           >
@@ -42,7 +42,7 @@ export default ({ data }) => {
             </i>
           </p>
           <p><FontAwesomeIcon
-          icon={["fab", `${dark ? "empie" : "rebel"}`]}
+          icon={["fab", `${dark ? "empire" : "rebel"}`]}
           className={`brand-icon ${dark ? "empire" : "rebel"}`}
           title="Home"
         /> 

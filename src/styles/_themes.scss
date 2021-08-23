@@ -204,6 +204,7 @@ h4,
 h5 {
   @include themify($themes) {
     color: themed("titleColor");
+    //text-align: center;
   }
 }
 
