@@ -17,18 +17,18 @@ export default ({ data }) => {
           width="150"
           height="150"
           fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
-          alt={dark ? "Darth Vader" : "R2-D2"}
+          src={dark ? `../../icons/z-logo-dark.png` : `../../icons/z-logo-light.png`}
+          alt={dark ? "The Dark Side" : "The Ashla"}
         />
         {unemployed && (
           <p className="mt-2">
-            <b> Hey! I am looking for new opportunities :)</b>
+            <b> Hey there, my name is ...</b>
           </p>
         )}
         <Container className="py-0 my-0">
           <h1
             style={{
-              fontSize: "5rem",
+              fontSize: "3.5rem",
               color: "black",
             }}
           >
@@ -38,14 +38,83 @@ export default ({ data }) => {
           <p>
             <i>
               {occupation} by day,&nbsp;
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+              {dark ? `Hacker by night` : `Programmer by night`}
             </i>
           </p>
+          <p><FontAwesomeIcon
+          icon={["fab", `${dark ? "empire" : "rebel"}`]}
+          className={`brand-icon ${dark ? "empire" : "rebel"}`}
+          title="Home"
+        /> 
+          </p>
+          
+          <p>My website is currently under construction, so please be kind :')</p>
+          
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
+        <a
+            href="https://linkedin.com/in/zack-eaton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "linkedin-in"]}
+              className="icons linkedin"
+              title="LinkedIn"
+            />
+          </a>
+        
           <a
-            href="https://www.github.com"
+            href="https://instagram.com/zackaryeaton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "instagram"]}
+              className="icons instagram"
+              title="Instagram"
+            />
+          </a>
+
+        <a
+            href="https://www.facebook.com/eatonstl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "facebook"]}
+              className="icons facebook"
+              title="Facebook"
+            />
+          </a>
+
+          <a
+            href="https://www.twitter.com/zack_eaton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "twitter"]}
+              className="icons twitter"
+              title="Twitter"
+            />
+          </a>
+
+          <a
+            href="https://dev.to/zackeaton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "dev"]}
+              className="icons dev"
+              title="Dev"
+            />
+          </a>
+          
+          <a
+            href="https://www.github.com/zackeaton"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,41 +124,11 @@ export default ({ data }) => {
               title="Github"
             />
           </a>
+
+        
+
           <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "linkedin"]}
-              className="icons linkedin"
-              title="LinkedIn"
-            />
-          </a>
-          <a
-            href="https://www.freecodecamp.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "free-code-camp"]}
-              className="icons fcc"
-              title="FreeCodeCamp"
-            />
-          </a>
-          <a
-            href="https://www.hackerrank.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "hackerrank"]}
-              className="icons hr"
-              title="Hackerrank"
-            />
-          </a>
-          <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:zackeaton@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -99,13 +138,15 @@ export default ({ data }) => {
               title="e-mail"
             />
           </a>
-          <a href="../../resume.pdf" target="_blank" download>
+
+          <a href="../../resume_zack_eaton.pdf" target="_blank" download>
             <FontAwesomeIcon
               icon={["fas", "file-alt"]}
               className="icons file"
               title="Resume"
             />
           </a>
+
         </div>
       </Container>
     </PageLayout>

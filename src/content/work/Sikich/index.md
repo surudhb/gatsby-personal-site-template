@@ -1,10 +1,10 @@
 ---
-company: "Google"
-location: "San Francisco, CA"
-position: "Software Engineering Intern"
-tags: ["React.js", "Webpack", "Docker", "Ruby"]
-startDate: "2017-09-04"
-endDate: "2017-12-21"
+company: "Sikich"
+location: "Remote"
+position: "Web Developer & Digital Marketing Specialist"
+tags: ["Wordpress", "PHP", "Javascript", "HTML & CSS"]
+startDate: "2021-04-05"
+endDate: "2021-04-05"
 ---
 
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget augue commodo, rutrum enim vel, varius lorem. Ut nec sem metus.</p>

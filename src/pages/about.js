@@ -36,7 +36,7 @@ export default ({ data }) => {
           rounded
           width="140"
           height="140"
-          src={`../../icons/luke-${toString()}.png`}
+          src={`../../icons/memoji-${toString()}.png`}
           alt={author}
         />
         <article className="w-75 m-auto pt-2 text-justify">
@@ -58,20 +58,14 @@ export default ({ data }) => {
               padawan
             </a>
             &nbsp;
-            <b>{occupation}</b> discovering the ways of the code. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+            <b>{occupation}</b> discovering the ways of the code.</p>
+            <p className="i-5">I am an Information Systems & Technology graduate from the University of Missouri Saint Louis. One thing I particularly enjoyed about majoring in Information Systems is that this field really allows me to use both my technical skills like computer programming and my front facing business skills. I am very passionate about data and analytics and I enjoy helping companies make better use of current data, as well as collecting new data.</p>
+            
+          <p className="i-5">
+          I've participated in a variety of school events. Everything from hackathons, networking events, and even intermural pickleball. I am an active member of The National Society of Leadership and Success, Information Systems Programming Club, CompTIA AITP, and Marketing Club. I volunteered my film and editing skills to produce the original promotional video for the first UMSL Hack, which was a huge success. UMSL Hack just put on its fourth hackathon in February 2020.
           </p>
           <p className="i-5">
-            In my spare time, Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p className="i-5">
-            Check out my <Link to="/projects">projects</Link> to see what I've
+            Please feel free to check out my <Link to="/projects">projects</Link> to see what I've
             been up to! Or check out my <Link to="/blog">blog</Link> to see
             what's recently caught my eye!
           </p>
